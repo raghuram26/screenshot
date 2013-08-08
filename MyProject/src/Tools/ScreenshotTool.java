@@ -29,13 +29,18 @@ public class ScreenshotTool {
 		st.screenshot(driver);
 		driver.quit();
 	}
-
+	
+	//Generates date
 	public static String getDateTime() {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-SSS");
 		Date date = new Date();
 		return dateFormat.format(date);
 	}
 
+	/**
+	 * 
+	 * @param driver
+	 */
 	public void screenshot(WebDriver driver) {
 		String timeStamp = getDateTime();
 		String imageName = "screenshot_" + timeStamp + ".png";
