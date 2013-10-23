@@ -1,4 +1,6 @@
 screenshot
 ==========
 
-Taking screenshot using java and webdriver tool
+Take screen shot of webpages using gird2 in combination with java.
+
+
